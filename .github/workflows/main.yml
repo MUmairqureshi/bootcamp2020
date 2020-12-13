@@ -27,9 +27,9 @@ jobs:
         uses: actions/setup.node@v2-beta
         with:
           version: 12
-      
+        
       - name: Github Action for yarn
-        uses: Bornis=es/action-yarn@v2.0.0
+        uses: Boreales/actions-yarn@v2.0.0
         with:
          #  Yarn command
          cmd: install #npm/yarn install
