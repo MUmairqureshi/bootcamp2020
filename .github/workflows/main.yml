@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: class2
+name: cl
 
 # Controls when the action will run. 
 on:
@@ -24,7 +24,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: setup Node.js enviroment
-        uses: actions/setup.node@v1.4.2
+        uses: actions/setup.node@v2-beta
         with:
           version: 12
       
