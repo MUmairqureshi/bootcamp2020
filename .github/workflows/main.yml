@@ -34,11 +34,11 @@ jobs:
          #  Yarn command
          cmd: install #npm/yarn install
         
-      - name: creating build 
+      - name:   Build React App
         run: yarn build
        
       - name: installing surge
-        run: npm install --g surge
+        run: npm install -g surge
       
       - name: deploying on surge
         run: surge ./build http://youthful-match.surge.sh/ --token ${{ secrets.SURGE_TOKEN}}   
