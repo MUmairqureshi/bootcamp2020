@@ -28,11 +28,9 @@ jobs:
         with:
           version: 12
         
-      - name: Github Action for yarn
-        uses: Borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v2.0.0
         with:
-         #  Yarn command
-         cmd: install #npm/yarn install
+          cmd: install # will run `yarn install` command
         
       - name:   Build React App
         run: yarn build
