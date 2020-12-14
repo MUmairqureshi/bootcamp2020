@@ -24,7 +24,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: setup Node.js enviroment
-        uses: actions/setup.node@v2-beta
+        uses: actions/setup-node@v2-beta
         with:
           version: 12
         
@@ -32,7 +32,7 @@ jobs:
         with:
           cmd: install # will run `yarn install` command
         
-      - name:   Build React App
+      - name: Build React App
         run: yarn build
        
       - name: installing surge
