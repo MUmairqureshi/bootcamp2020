@@ -23,22 +23,27 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: setup Node.js enviroment
-        uses: actions/setup.node@v2-beta
+      - name: setup Node.js 
+        uses: actions/setup-node@v2-beta
         with:
+<<<<<<< HEAD
           version: 12
       
       - name: Github Action for yarn
-        uses: Bornis=es/action-yarn@v2.1.0
-        with:
-         #  Yarn command
-         cmd: install #npm/yarn install
+        uses: Borales/action-yarn@v2.0.0
+=======
+          node-version: 12
         
-      - name: creating build 
+      - uses: borales/actions-yarn@v2.0.0
+>>>>>>> 55bd182d40e9465fcc96002920769a1c56cdd0ed
+        with:
+          cmd: install # will run `yarn install` command
+        
+      - name: Build React App
         run: yarn build
        
       - name: installing surge
-        run: npm install --g surge
+        run: npm install -g surge
       
       - name: deploying on surge
         run: surge ./build http://youthful-match.surge.sh/ --token ${{ secrets.SURGE_TOKEN}}   
