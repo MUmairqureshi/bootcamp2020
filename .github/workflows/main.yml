@@ -27,10 +27,16 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
 <<<<<<< HEAD
+<<<<<<< HEAD
           version: 12
       
       - name: Github Action for yarn
         uses: Borales/action-yarn@v2.0.0
+=======
+          node-version: 12
+        
+      - uses: borales/actions-yarn@v2.0.0
+>>>>>>> 55bd182d40e9465fcc96002920769a1c56cdd0ed
 =======
           node-version: 12
         
